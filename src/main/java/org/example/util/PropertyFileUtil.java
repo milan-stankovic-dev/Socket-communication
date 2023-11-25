@@ -37,4 +37,8 @@ public class PropertyFileUtil {
     public static int getServerPort(){
         return Integer.parseInt(getPropertyNamed("server.port"));
     }
+
+    public static int getDataSegmentBytes(){
+        return Integer.parseInt(getPropertyNamed("data.segment.bytes"));
+    }
 }

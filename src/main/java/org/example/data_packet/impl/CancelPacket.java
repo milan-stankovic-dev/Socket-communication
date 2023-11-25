@@ -8,5 +8,6 @@ public record CancelPacket(
 ) implements Serializable {
     public CancelPacket {
         id = 2L;
+        len = 16;
     }
 }

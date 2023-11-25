@@ -9,5 +9,6 @@ public record DummyPacket(
 )implements Serializable {
     public DummyPacket {
         id = 1L;
+        len = 16;
     }
 }
