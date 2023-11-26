@@ -2,46 +2,46 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-11-26T10:15:29.061510118Z</date>
-  <millis>1700993729061</millis>
-  <nanos>510118</nanos>
-  <sequence>0</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:29.096657840Z</date>
-  <millis>1700993729096</millis>
-  <nanos>657840</nanos>
+  <date>2023-11-26T12:24:11.856171168Z</date>
+  <millis>1701001451856</millis>
+  <nanos>171168</nanos>
   <sequence>1</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET DATA: </message>
+  <message>PACKET ID: 1</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:29.098707788Z</date>
-  <millis>1700993729098</millis>
-  <nanos>707788</nanos>
+  <date>2023-11-26T12:24:11.858769336Z</date>
+  <millis>1701001451858</millis>
+  <nanos>769336</nanos>
   <sequence>2</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
+  <message>PACKET DATA: </message>
+</record>
+<record>
+  <date>2023-11-26T12:24:11.859860646Z</date>
+  <millis>1701001451859</millis>
+  <nanos>860646</nanos>
+  <sequence>3</sequence>
+  <logger>org.example.communication.PacketReader</logger>
+  <level>FINEST</level>
+  <class>org.example.communication.PacketReader</class>
+  <method>readPacketFully</method>
+  <thread>1</thread>
   <message>PACKET TYPE: Dummy</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:29.106168404Z</date>
-  <millis>1700993729106</millis>
-  <nanos>168404</nanos>
-  <sequence>3</sequence>
+  <date>2023-11-26T12:24:11.863576775Z</date>
+  <millis>1701001451863</millis>
+  <nanos>576775</nanos>
+  <sequence>4</sequence>
   <logger>main</logger>
   <level>FINE</level>
   <class>org.example.communication.PacketWriter</class>
@@ -50,1083 +50,207 @@
   <message>Delay is :16 seconds.</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.349058820Z</date>
-  <millis>1700993731349</millis>
-  <nanos>58820</nanos>
-  <sequence>4</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:31.350558680Z</date>
-  <millis>1700993731350</millis>
-  <nanos>558680</nanos>
+  <date>2023-11-26T12:24:12.667453422Z</date>
+  <millis>1701001452667</millis>
+  <nanos>453422</nanos>
   <sequence>5</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET DATA: </message>
+  <message>PACKET ID: 1</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.353037319Z</date>
-  <millis>1700993731353</millis>
-  <nanos>37319</nanos>
+  <date>2023-11-26T12:24:12.669180035Z</date>
+  <millis>1701001452669</millis>
+  <nanos>180035</nanos>
   <sequence>6</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
+  <message>PACKET DATA: </message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.355394406Z</date>
-  <millis>1700993731355</millis>
-  <nanos>394406</nanos>
+  <date>2023-11-26T12:24:12.671040246Z</date>
+  <millis>1701001452671</millis>
+  <nanos>40246</nanos>
   <sequence>7</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>20</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:31.551036812Z</date>
-  <millis>1700993731551</millis>
-  <nanos>36812</nanos>
-  <sequence>8</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET ID: 1</message>
+  <message>PACKET TYPE: Dummy</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.552710025Z</date>
-  <millis>1700993731552</millis>
-  <nanos>710025</nanos>
+  <date>2023-11-26T12:24:12.672920309Z</date>
+  <millis>1701001452672</millis>
+  <nanos>920309</nanos>
+  <sequence>8</sequence>
+  <logger>main</logger>
+  <level>FINE</level>
+  <class>org.example.communication.PacketWriter</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>Delay is :16 seconds.</message>
+</record>
+<record>
+  <date>2023-11-26T12:24:12.760327032Z</date>
+  <millis>1701001452760</millis>
+  <nanos>327032</nanos>
   <sequence>9</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET DATA: </message>
+  <message>PACKET ID: 1</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.555004058Z</date>
-  <millis>1700993731555</millis>
-  <nanos>4058</nanos>
+  <date>2023-11-26T12:24:12.761726140Z</date>
+  <millis>1701001452761</millis>
+  <nanos>726140</nanos>
   <sequence>10</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
+  <message>PACKET DATA: </message>
+</record>
+<record>
+  <date>2023-11-26T12:24:12.763495469Z</date>
+  <millis>1701001452763</millis>
+  <nanos>495469</nanos>
+  <sequence>11</sequence>
+  <logger>org.example.communication.PacketReader</logger>
+  <level>FINEST</level>
+  <class>org.example.communication.PacketReader</class>
+  <method>readPacketFully</method>
+  <thread>1</thread>
   <message>PACKET TYPE: Dummy</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.556846207Z</date>
-  <millis>1700993731556</millis>
-  <nanos>846207</nanos>
-  <sequence>11</sequence>
+  <date>2023-11-26T12:24:12.765160529Z</date>
+  <millis>1701001452765</millis>
+  <nanos>160529</nanos>
+  <sequence>12</sequence>
   <logger>main</logger>
   <level>FINE</level>
   <class>org.example.communication.PacketWriter</class>
   <method>run</method>
-  <thread>22</thread>
+  <thread>23</thread>
   <message>Delay is :16 seconds.</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.668638909Z</date>
-  <millis>1700993731668</millis>
-  <nanos>638909</nanos>
-  <sequence>12</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:31.669894085Z</date>
-  <millis>1700993731669</millis>
-  <nanos>894085</nanos>
+  <date>2023-11-26T12:24:13.660872273Z</date>
+  <millis>1701001453660</millis>
+  <nanos>872273</nanos>
   <sequence>13</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
+  <logger>main</logger>
+  <level>INFO</level>
+  <class>org.example.user_interaction.UserQuitThread</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>Quitting...</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.671319038Z</date>
-  <millis>1700993731671</millis>
-  <nanos>319038</nanos>
+  <date>2023-11-26T12:24:13.793394986Z</date>
+  <millis>1701001453793</millis>
+  <nanos>394986</nanos>
   <sequence>14</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
+  <message>PACKET ID: 1</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:31.673090614Z</date>
-  <millis>1700993731673</millis>
-  <nanos>90614</nanos>
+  <date>2023-11-26T12:24:13.794579957Z</date>
+  <millis>1701001453794</millis>
+  <nanos>579957</nanos>
   <sequence>15</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>24</thread>
-  <message>Delay is :16 seconds.</message>
+  <logger>org.example.communication.PacketReader</logger>
+  <level>FINEST</level>
+  <class>org.example.communication.PacketReader</class>
+  <method>readPacketFully</method>
+  <thread>1</thread>
+  <message>PACKET DATA: </message>
 </record>
 <record>
-  <date>2023-11-26T10:15:32.039190590Z</date>
-  <millis>1700993732039</millis>
-  <nanos>190590</nanos>
+  <date>2023-11-26T12:24:13.796090785Z</date>
+  <millis>1701001453796</millis>
+  <nanos>90785</nanos>
   <sequence>16</sequence>
   <logger>org.example.communication.PacketReader</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketReader</class>
   <method>readPacketFully</method>
   <thread>1</thread>
-  <message>PACKET ID: 1</message>
+  <message>PACKET TYPE: Dummy</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:32.040310517Z</date>
-  <millis>1700993732040</millis>
-  <nanos>310517</nanos>
+  <date>2023-11-26T12:24:13.797729814Z</date>
+  <millis>1701001453797</millis>
+  <nanos>729814</nanos>
   <sequence>17</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
+  <logger>main</logger>
+  <level>FINE</level>
+  <class>org.example.communication.PacketWriter</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>Delay is :16 seconds.</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:32.041681619Z</date>
-  <millis>1700993732041</millis>
-  <nanos>681619</nanos>
+  <date>2023-11-26T12:24:27.865686312Z</date>
+  <millis>1701001467865</millis>
+  <nanos>686312</nanos>
   <sequence>18</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:32.043255226Z</date>
-  <millis>1700993732043</millis>
-  <nanos>255226</nanos>
-  <sequence>19</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>26</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:33.266365020Z</date>
-  <millis>1700993733266</millis>
-  <nanos>365020</nanos>
-  <sequence>20</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:33.267510845Z</date>
-  <millis>1700993733267</millis>
-  <nanos>510845</nanos>
-  <sequence>21</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:33.269097617Z</date>
-  <millis>1700993733269</millis>
-  <nanos>97617</nanos>
-  <sequence>22</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:33.270714166Z</date>
-  <millis>1700993733270</millis>
-  <nanos>714166</nanos>
-  <sequence>23</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>28</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:35.649037473Z</date>
-  <millis>1700993735649</millis>
-  <nanos>37473</nanos>
-  <sequence>24</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:35.650154623Z</date>
-  <millis>1700993735650</millis>
-  <nanos>154623</nanos>
-  <sequence>25</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:35.651584120Z</date>
-  <millis>1700993735651</millis>
-  <nanos>584120</nanos>
-  <sequence>26</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:35.653196976Z</date>
-  <millis>1700993735653</millis>
-  <nanos>196976</nanos>
-  <sequence>27</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>30</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.259418898Z</date>
-  <millis>1700993736259</millis>
-  <nanos>418898</nanos>
-  <sequence>28</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.260548854Z</date>
-  <millis>1700993736260</millis>
-  <nanos>548854</nanos>
-  <sequence>29</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.261973411Z</date>
-  <millis>1700993736261</millis>
-  <nanos>973411</nanos>
-  <sequence>30</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.263589310Z</date>
-  <millis>1700993736263</millis>
-  <nanos>589310</nanos>
-  <sequence>31</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>32</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.337197177Z</date>
-  <millis>1700993736337</millis>
-  <nanos>197177</nanos>
-  <sequence>32</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.338161161Z</date>
-  <millis>1700993736338</millis>
-  <nanos>161161</nanos>
-  <sequence>33</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.339419284Z</date>
-  <millis>1700993736339</millis>
-  <nanos>419284</nanos>
-  <sequence>34</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.341085767Z</date>
-  <millis>1700993736341</millis>
-  <nanos>85767</nanos>
-  <sequence>35</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>34</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.942503078Z</date>
-  <millis>1700993736942</millis>
-  <nanos>503078</nanos>
-  <sequence>36</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.943653829Z</date>
-  <millis>1700993736943</millis>
-  <nanos>653829</nanos>
-  <sequence>37</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.945022594Z</date>
-  <millis>1700993736945</millis>
-  <nanos>22594</nanos>
-  <sequence>38</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:36.946599540Z</date>
-  <millis>1700993736946</millis>
-  <nanos>599540</nanos>
-  <sequence>39</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>36</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:37.079291234Z</date>
-  <millis>1700993737079</millis>
-  <nanos>291234</nanos>
-  <sequence>40</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:37.080226375Z</date>
-  <millis>1700993737080</millis>
-  <nanos>226375</nanos>
-  <sequence>41</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:37.081628906Z</date>
-  <millis>1700993737081</millis>
-  <nanos>628906</nanos>
-  <sequence>42</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:37.083013036Z</date>
-  <millis>1700993737083</millis>
-  <nanos>13036</nanos>
-  <sequence>43</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>38</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.278040541Z</date>
-  <millis>1700993739278</millis>
-  <nanos>40541</nanos>
-  <sequence>44</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.278915915Z</date>
-  <millis>1700993739278</millis>
-  <nanos>915915</nanos>
-  <sequence>45</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.279931421Z</date>
-  <millis>1700993739279</millis>
-  <nanos>931421</nanos>
-  <sequence>46</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.281404389Z</date>
-  <millis>1700993739281</millis>
-  <nanos>404389</nanos>
-  <sequence>47</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>40</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.281423209Z</date>
-  <millis>1700993739281</millis>
-  <nanos>423209</nanos>
-  <sequence>48</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.282927269Z</date>
-  <millis>1700993739282</millis>
-  <nanos>927269</nanos>
-  <sequence>49</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.283936820Z</date>
-  <millis>1700993739283</millis>
-  <nanos>936820</nanos>
-  <sequence>50</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:39.285079997Z</date>
-  <millis>1700993739285</millis>
-  <nanos>79997</nanos>
-  <sequence>51</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>42</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:40.242161391Z</date>
-  <millis>1700993740242</millis>
-  <nanos>161391</nanos>
-  <sequence>52</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:40.243078941Z</date>
-  <millis>1700993740243</millis>
-  <nanos>78941</nanos>
-  <sequence>53</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:40.244041411Z</date>
-  <millis>1700993740244</millis>
-  <nanos>41411</nanos>
-  <sequence>54</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:40.245316190Z</date>
-  <millis>1700993740245</millis>
-  <nanos>316190</nanos>
-  <sequence>55</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>44</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.181667310Z</date>
-  <millis>1700993741181</millis>
-  <nanos>667310</nanos>
-  <sequence>56</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.182881533Z</date>
-  <millis>1700993741182</millis>
-  <nanos>881533</nanos>
-  <sequence>57</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.184005845Z</date>
-  <millis>1700993741184</millis>
-  <nanos>5845</nanos>
-  <sequence>58</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.185396102Z</date>
-  <millis>1700993741185</millis>
-  <nanos>396102</nanos>
-  <sequence>59</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>46</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.788702217Z</date>
-  <millis>1700993741788</millis>
-  <nanos>702217</nanos>
-  <sequence>60</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.789472536Z</date>
-  <millis>1700993741789</millis>
-  <nanos>472536</nanos>
-  <sequence>61</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.790591349Z</date>
-  <millis>1700993741790</millis>
-  <nanos>591349</nanos>
-  <sequence>62</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:41.791910945Z</date>
-  <millis>1700993741791</millis>
-  <nanos>910945</nanos>
-  <sequence>63</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>48</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:42.099304708Z</date>
-  <millis>1700993742099</millis>
-  <nanos>304708</nanos>
-  <sequence>64</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:42.100121945Z</date>
-  <millis>1700993742100</millis>
-  <nanos>121945</nanos>
-  <sequence>65</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:42.100996601Z</date>
-  <millis>1700993742100</millis>
-  <nanos>996601</nanos>
-  <sequence>66</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:42.102157692Z</date>
-  <millis>1700993742102</millis>
-  <nanos>157692</nanos>
-  <sequence>67</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>50</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.726396091Z</date>
-  <millis>1700993744726</millis>
-  <nanos>396091</nanos>
-  <sequence>68</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.727208211Z</date>
-  <millis>1700993744727</millis>
-  <nanos>208211</nanos>
-  <sequence>69</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.728265484Z</date>
-  <millis>1700993744728</millis>
-  <nanos>265484</nanos>
-  <sequence>70</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.729717468Z</date>
-  <millis>1700993744729</millis>
-  <nanos>717468</nanos>
-  <sequence>71</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>52</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.909399831Z</date>
-  <millis>1700993744909</millis>
-  <nanos>399831</nanos>
-  <sequence>72</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.910229738Z</date>
-  <millis>1700993744910</millis>
-  <nanos>229738</nanos>
-  <sequence>73</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.911227212Z</date>
-  <millis>1700993744911</millis>
-  <nanos>227212</nanos>
-  <sequence>74</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:44.912722421Z</date>
-  <millis>1700993744912</millis>
-  <nanos>722421</nanos>
-  <sequence>75</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>54</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:45.011401595Z</date>
-  <millis>1700993745011</millis>
-  <nanos>401595</nanos>
-  <sequence>76</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:45.012184038Z</date>
-  <millis>1700993745012</millis>
-  <nanos>184038</nanos>
-  <sequence>77</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:45.012955641Z</date>
-  <millis>1700993745012</millis>
-  <nanos>955641</nanos>
-  <sequence>78</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:45.014268657Z</date>
-  <millis>1700993745014</millis>
-  <nanos>268657</nanos>
-  <sequence>79</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>56</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:45.108752608Z</date>
-  <millis>1700993745108</millis>
-  <nanos>752608</nanos>
-  <sequence>80</sequence>
   <logger>main</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketWriter</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Packet with id: -1264180537 delivered to the server.</message>
+  <message>Packet with id: -1264171278 delivered to the server.</message>
 </record>
 <record>
-  <date>2023-11-26T10:15:46.151799454Z</date>
-  <millis>1700993746151</millis>
-  <nanos>799454</nanos>
-  <sequence>81</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.152539924Z</date>
-  <millis>1700993746152</millis>
-  <nanos>539924</nanos>
-  <sequence>82</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.153506026Z</date>
-  <millis>1700993746153</millis>
-  <nanos>506026</nanos>
-  <sequence>83</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.154769113Z</date>
-  <millis>1700993746154</millis>
-  <nanos>769113</nanos>
-  <sequence>84</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>58</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.796146765Z</date>
-  <millis>1700993746796</millis>
-  <nanos>146765</nanos>
-  <sequence>85</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.796993223Z</date>
-  <millis>1700993746796</millis>
-  <nanos>993223</nanos>
-  <sequence>86</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.797740428Z</date>
-  <millis>1700993746797</millis>
-  <nanos>740428</nanos>
-  <sequence>87</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:46.798930974Z</date>
-  <millis>1700993746798</millis>
-  <nanos>930974</nanos>
-  <sequence>88</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>60</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:47.150769917Z</date>
-  <millis>1700993747150</millis>
-  <nanos>769917</nanos>
-  <sequence>89</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:47.151599391Z</date>
-  <millis>1700993747151</millis>
-  <nanos>599391</nanos>
-  <sequence>90</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T10:15:47.152316464Z</date>
-  <millis>1700993747152</millis>
-  <nanos>316464</nanos>
-  <sequence>91</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:47.153340736Z</date>
-  <millis>1700993747153</millis>
-  <nanos>340736</nanos>
-  <sequence>92</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>62</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T10:15:47.357067649Z</date>
-  <millis>1700993747357</millis>
-  <nanos>67649</nanos>
-  <sequence>93</sequence>
+  <date>2023-11-26T12:24:28.674564265Z</date>
+  <millis>1701001468674</millis>
+  <nanos>564265</nanos>
+  <sequence>19</sequence>
   <logger>main</logger>
   <level>FINEST</level>
   <class>org.example.communication.PacketWriter</class>
   <method>run</method>
-  <thread>20</thread>
-  <message>Packet with id: -1264180536 delivered to the server.</message>
+  <thread>21</thread>
+  <message>Packet with id: -1264171277 delivered to the server.</message>
+</record>
+<record>
+  <date>2023-11-26T12:24:28.766772471Z</date>
+  <millis>1701001468766</millis>
+  <nanos>772471</nanos>
+  <sequence>20</sequence>
+  <logger>main</logger>
+  <level>FINEST</level>
+  <class>org.example.communication.PacketWriter</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>Packet with id: -1264171276 delivered to the server.</message>
+</record>
+<record>
+  <date>2023-11-26T12:24:29.799378961Z</date>
+  <millis>1701001469799</millis>
+  <nanos>378961</nanos>
+  <sequence>21</sequence>
+  <logger>main</logger>
+  <level>FINEST</level>
+  <class>org.example.communication.PacketWriter</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>Packet with id: -1264171275 delivered to the server.</message>
 </record>
 </log>
