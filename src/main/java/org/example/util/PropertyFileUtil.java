@@ -41,4 +41,18 @@ public class PropertyFileUtil {
     public static int getDataSegmentBytes(){
         return Integer.parseInt(getPropertyNamed("data.segment.bytes"));
     }
+
+    public static int getDummyPacketLength(){
+        return Integer.parseInt(getPropertyNamed("dummy.packet.length"));
+    }
+    public static int getCancelPacketLength(){
+        return Integer.parseInt(getPropertyNamed("cancel.packet.length"));
+    }
+
+    public static int getDummyPacketId(){
+        return Integer.parseInt(getPropertyNamed("dummy.packet.id"));
+    }
+    public static int getCancelPacketId(){
+        return Integer.parseInt(getPropertyNamed("cancel.packet.id"));
+    }
 }

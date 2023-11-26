@@ -2,6 +2,7 @@ package org.example.util;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.Arrays;
 
 public class ByteUtil {
 
@@ -26,7 +27,7 @@ public class ByteUtil {
         return ByteBuffer.wrap(bytes).order(ByteOrder.LITTLE_ENDIAN).getInt();
     }
 
-    public static byte[] byteBlockToIntLE(int toConvert){
+    public static byte[] intAsByteBlockLE(int toConvert){
 //        byte[] bytes = new byte[sizeOfBlock];
 //        final int oneByteBits = 8;
 //        final int sizeOfBlock = 4;
@@ -52,5 +53,15 @@ public class ByteUtil {
             System.out.print(byteToBinaryString(b) + " ");
         }
         System.out.println("NEXT PACKET");
+    }
+    public static byte[] concatenateByteArrays(byte[] array1,
+                                             byte[] array2){
+        final int length1 = array1.length;
+        final int length2 = array2.length;
+
+        final byte[] result = Arrays.copyOf(array1,
+                length1 + length2);
+        System.arraycopy(array2, 0, result, length1,length2);
+        return result;
     }
 }
