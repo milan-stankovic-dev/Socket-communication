@@ -1,6 +1,7 @@
 package org.example.communication;
 
 import lombok.Getter;
+import org.example.config.LoggerConfig;
 import org.example.metadata.PacketMetadata;
 import org.example.util.ByteUtil;
 
@@ -12,12 +13,17 @@ public class PacketReader {
     private final DataInputStream inputStream;
     @Getter
     private final DataOutputStream outputStream;
+    private static PacketReader instance;
     private static final Logger logger = Logger.getLogger(PacketReader.class.getName());
-    public PacketReader() throws IOException{
-            final Socket socket = MyConnectionFactory.getInstance()
+    private PacketReader() throws IOException{
+            final Socket socket = ConnectionFactory.getInstance()
                     .establishConnection();
             this.inputStream = new DataInputStream(socket.getInputStream());
             this.outputStream = new DataOutputStream(socket.getOutputStream());
+    }
+
+    public static PacketReader getInstance() throws IOException{
+        return instance != null ? instance : new PacketReader();
     }
 
     public int readPacketId() throws IOException {
@@ -51,14 +57,14 @@ public class PacketReader {
         this.inputStream.readFully(packetBytes);
 
 
-        logger.finest("PACKET ID: " + packetId);
-        logger.finest("PACKET DATA: ");
+        logger.info("PACKET ID: " + packetId);
+        logger.info("PACKET DATA: ");
         ByteUtil.printDataBits(packetBytes);
 
         if (packetId == 1) {
-            logger.finest("PACKET TYPE: Dummy");
+            logger.info("PACKET TYPE: Dummy");
         } else {
-            logger.finest("PACKET TYPE: Cancel");
+            logger.info("PACKET TYPE: Cancel");
         }
 
         return ByteUtil.concatenateByteArrays(

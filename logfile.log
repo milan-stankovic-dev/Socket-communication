@@ -2,255 +2,115 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2023-11-26T12:24:11.856171168Z</date>
-  <millis>1701001451856</millis>
-  <nanos>171168</nanos>
-  <sequence>1</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:11.858769336Z</date>
-  <millis>1701001451858</millis>
-  <nanos>769336</nanos>
-  <sequence>2</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T12:24:11.859860646Z</date>
-  <millis>1701001451859</millis>
-  <nanos>860646</nanos>
-  <sequence>3</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:11.863576775Z</date>
-  <millis>1701001451863</millis>
-  <nanos>576775</nanos>
-  <sequence>4</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.667453422Z</date>
-  <millis>1701001452667</millis>
-  <nanos>453422</nanos>
-  <sequence>5</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.669180035Z</date>
-  <millis>1701001452669</millis>
-  <nanos>180035</nanos>
-  <sequence>6</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.671040246Z</date>
-  <millis>1701001452671</millis>
-  <nanos>40246</nanos>
-  <sequence>7</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.672920309Z</date>
-  <millis>1701001452672</millis>
-  <nanos>920309</nanos>
-  <sequence>8</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>21</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.760327032Z</date>
-  <millis>1701001452760</millis>
-  <nanos>327032</nanos>
-  <sequence>9</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET ID: 1</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.761726140Z</date>
-  <millis>1701001452761</millis>
-  <nanos>726140</nanos>
-  <sequence>10</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET DATA: </message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.763495469Z</date>
-  <millis>1701001452763</millis>
-  <nanos>495469</nanos>
-  <sequence>11</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
-  <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:12.765160529Z</date>
-  <millis>1701001452765</millis>
-  <nanos>160529</nanos>
-  <sequence>12</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>23</thread>
-  <message>Delay is :16 seconds.</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:13.660872273Z</date>
-  <millis>1701001453660</millis>
-  <nanos>872273</nanos>
-  <sequence>13</sequence>
-  <logger>main</logger>
+  <date>2023-11-27T10:43:26.854239710Z</date>
+  <millis>1701081806854</millis>
+  <nanos>239710</nanos>
+  <sequence>259</sequence>
+  <logger>org.example.Main</logger>
   <level>INFO</level>
-  <class>org.example.user_interaction.UserQuitThread</class>
-  <method>run</method>
-  <thread>16</thread>
-  <message>Quitting...</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:13.793394986Z</date>
-  <millis>1701001453793</millis>
-  <nanos>394986</nanos>
-  <sequence>14</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
+  <class>org.example.Main</class>
+  <method>main</method>
   <thread>1</thread>
-  <message>PACKET ID: 1</message>
+  <message>Socket closed. Main finished executing.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2023-11-26T12:24:13.794579957Z</date>
-  <millis>1701001453794</millis>
-  <nanos>579957</nanos>
-  <sequence>15</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
+  <date>2023-11-27T10:53:22.040904166Z</date>
+  <millis>1701082402040</millis>
+  <nanos>904166</nanos>
+  <sequence>432</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
   <thread>1</thread>
-  <message>PACKET DATA: </message>
+  <message>Socket closed. Main finished executing.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2023-11-26T12:24:13.796090785Z</date>
-  <millis>1701001453796</millis>
-  <nanos>90785</nanos>
-  <sequence>16</sequence>
-  <logger>org.example.communication.PacketReader</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketReader</class>
-  <method>readPacketFully</method>
+  <date>2023-11-27T10:53:53.078918792Z</date>
+  <millis>1701082433078</millis>
+  <nanos>918792</nanos>
+  <sequence>60</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
   <thread>1</thread>
-  <message>PACKET TYPE: Dummy</message>
+  <message>Socket closed. Main finished executing.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2023-11-26T12:24:13.797729814Z</date>
-  <millis>1701001453797</millis>
-  <nanos>729814</nanos>
-  <sequence>17</sequence>
-  <logger>main</logger>
-  <level>FINE</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>25</thread>
-  <message>Delay is :16 seconds.</message>
+  <date>2023-11-27T10:58:28.431449457Z</date>
+  <millis>1701082708431</millis>
+  <nanos>449457</nanos>
+  <sequence>90</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Socket closed. Main finished executing.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2023-11-26T12:24:27.865686312Z</date>
-  <millis>1701001467865</millis>
-  <nanos>686312</nanos>
-  <sequence>18</sequence>
-  <logger>main</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Packet with id: -1264171278 delivered to the server.</message>
+  <date>2023-11-27T10:59:46.453312417Z</date>
+  <millis>1701082786453</millis>
+  <nanos>312417</nanos>
+  <sequence>63</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Socket closed. Main finished executing.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2023-11-26T12:24:28.674564265Z</date>
-  <millis>1701001468674</millis>
-  <nanos>564265</nanos>
-  <sequence>19</sequence>
-  <logger>main</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>21</thread>
-  <message>Packet with id: -1264171277 delivered to the server.</message>
+  <date>2023-11-27T11:00:54.449481464Z</date>
+  <millis>1701082854449</millis>
+  <nanos>481464</nanos>
+  <sequence>172</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Socket closed. Main finished executing.</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2023-11-26T12:24:28.766772471Z</date>
-  <millis>1701001468766</millis>
-  <nanos>772471</nanos>
-  <sequence>20</sequence>
-  <logger>main</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>23</thread>
-  <message>Packet with id: -1264171276 delivered to the server.</message>
-</record>
-<record>
-  <date>2023-11-26T12:24:29.799378961Z</date>
-  <millis>1701001469799</millis>
-  <nanos>378961</nanos>
-  <sequence>21</sequence>
-  <logger>main</logger>
-  <level>FINEST</level>
-  <class>org.example.communication.PacketWriter</class>
-  <method>run</method>
-  <thread>25</thread>
-  <message>Packet with id: -1264171275 delivered to the server.</message>
+  <date>2023-11-27T11:11:04.051529152Z</date>
+  <millis>1701083464051</millis>
+  <nanos>529152</nanos>
+  <sequence>140</sequence>
+  <logger>org.example.Main</logger>
+  <level>INFO</level>
+  <class>org.example.Main</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Socket closed. Main finished executing.</message>
 </record>
 </log>

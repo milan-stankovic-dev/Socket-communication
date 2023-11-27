@@ -1,6 +1,7 @@
 package org.example.user_interaction;
 
 import lombok.Getter;
+import org.example.config.LoggerConfig;
 
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -8,9 +9,7 @@ import java.util.logging.Logger;
 public class UserQuitThread extends Thread{
     @Getter
     private volatile boolean shouldQuit = false;
-    private final Logger logger = Logger.getLogger(
-            UserQuitThread.currentThread().getName()
-    );
+    private final Logger logger = Logger.getLogger(UserQuitThread.currentThread().getName());
     public UserQuitThread(){
         setDaemon(true);
         start();
@@ -19,9 +18,9 @@ public class UserQuitThread extends Thread{
     @Override
     public void run() {
       logger.info("""
-              ***********************************
-                PRESS THE Q KEY TO QUIT THE APP
-              ***********************************
+              ************************************
+               ENTER IN THE Q KEY TO QUIT THE APP
+              ************************************
               """);
       while(!this.shouldQuit) {
           try {

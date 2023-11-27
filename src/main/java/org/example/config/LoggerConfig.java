@@ -4,16 +4,24 @@ import java.io.IOException;
 import java.util.logging.*;
 
 public class LoggerConfig {
-    public static void configureLogger() throws IOException {
-        Logger rootLogger = Logger.getLogger("");
-        rootLogger.setLevel(Level.ALL);
+    public static Logger configureLogger(String loggerName)  {
+        Logger customLogger = Logger.getLogger(loggerName);
+        customLogger.setLevel(Level.ALL);
 
         Handler consoleHandler = new ConsoleHandler();
         consoleHandler.setLevel(Level.ALL);
-        rootLogger.addHandler(consoleHandler);
+        customLogger.addHandler(consoleHandler);
 
-        FileHandler fileHandler = new FileHandler("logfile.log");
-        fileHandler.setLevel(Level.ALL);
-        rootLogger.addHandler(fileHandler);
+        FileHandler fileHandler = null;
+        try {
+            fileHandler = new FileHandler("logfile.log", true);
+            fileHandler.setLevel(Level.ALL);
+            customLogger.addHandler(fileHandler);
+        } catch (IOException e) {
+            Logger.getAnonymousLogger().severe("Could not create " +
+                    "logger (logfile not accessible.).");
+        }
+
+        return customLogger;
     }
 }

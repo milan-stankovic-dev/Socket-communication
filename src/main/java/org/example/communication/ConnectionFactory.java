@@ -4,23 +4,21 @@ import lombok.Data;
 import org.example.util.PropertyFileUtil;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.Socket;
 
 @Data
-public class MyConnectionFactory {
+public class ConnectionFactory {
     private final String serverAddress;
     private final int portNumber;
-    private static MyConnectionFactory instance;
+    private static ConnectionFactory instance;
 
-    private MyConnectionFactory() {
+    private ConnectionFactory() {
         serverAddress = PropertyFileUtil.getServerAddress();
         portNumber = PropertyFileUtil.getServerPort();
     }
 
-    public static MyConnectionFactory getInstance(){
-        return instance != null ? instance : new MyConnectionFactory();
+    public static ConnectionFactory getInstance(){
+        return instance != null ? instance : new ConnectionFactory();
     }
 
     public Socket establishConnection() throws IOException{

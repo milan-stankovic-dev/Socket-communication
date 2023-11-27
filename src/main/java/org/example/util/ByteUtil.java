@@ -6,15 +6,6 @@ import java.util.Arrays;
 
 public class ByteUtil {
 
-    public static byte[] intToBytes(int value) {
-        final byte[] bytes = new byte[4];
-        bytes[0] = (byte) (value & 0xFF);
-        bytes[1] = (byte) ((value >> 8) & 0xFF);
-        bytes[2] = (byte) ((value >> 16) & 0xFF);
-        bytes[3] = (byte) ((value >> 24) & 0xFF);
-        return bytes;
-    }
-
     public static int byteBlockAsIntLE(byte[] bytes){
 //        int converted = 0;
 //        final int oneByteBits = 8;
