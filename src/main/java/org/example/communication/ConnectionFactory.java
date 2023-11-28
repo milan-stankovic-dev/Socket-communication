@@ -1,6 +1,7 @@
 package org.example.communication;
 
 import lombok.Data;
+import lombok.Getter;
 import org.example.util.PropertyFileUtil;
 
 import java.io.IOException;
@@ -10,15 +11,12 @@ import java.net.Socket;
 public class ConnectionFactory {
     private final String serverAddress;
     private final int portNumber;
-    private static ConnectionFactory instance;
+    @Getter
+    private static final ConnectionFactory instance = new ConnectionFactory();
 
     private ConnectionFactory() {
-        serverAddress = PropertyFileUtil.getServerAddress();
-        portNumber = PropertyFileUtil.getServerPort();
-    }
-
-    public static ConnectionFactory getInstance(){
-        return instance != null ? instance : new ConnectionFactory();
+        this.serverAddress = PropertyFileUtil.getServerAddress();
+        this.portNumber = PropertyFileUtil.getServerPort();
     }
 
     public Socket establishConnection() throws IOException{

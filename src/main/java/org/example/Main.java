@@ -21,7 +21,6 @@ public class Main {
             socket.close();
             logger.info("Socket closed. Main finished executing.");
 
-
         } catch (IOException e) {
             logger.severe("IOException in main: " +
                     e.getMessage());

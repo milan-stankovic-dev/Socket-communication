@@ -14,15 +14,13 @@ public class PropertyFileUtil {
     }
     private static void loadProperties(String filePath){
         try {
-            var inputStream = new FileInputStream(filePath);
+            final var inputStream = new FileInputStream(filePath);
             properties.load(inputStream);
         } catch (FileNotFoundException e) {
             System.out.println("Input stream for given file name " +
                     "cannot be created. Please check if file is present.");
-            e.printStackTrace();
         } catch (IOException e) {
             System.out.println("Properties failed to load.");
-            e.printStackTrace();
         }
     }
     private static String getPropertyNamed(String propName){
@@ -34,6 +32,7 @@ public class PropertyFileUtil {
     public static String getServerAddress(){
         return getPropertyNamed("server.address");
     }
+
     public static int getServerPort(){
         return Integer.parseInt(getPropertyNamed("server.port"));
     }
@@ -45,6 +44,7 @@ public class PropertyFileUtil {
     public static int getDummyPacketLength(){
         return Integer.parseInt(getPropertyNamed("dummy.packet.length"));
     }
+
     public static int getCancelPacketLength(){
         return Integer.parseInt(getPropertyNamed("cancel.packet.length"));
     }
@@ -52,6 +52,7 @@ public class PropertyFileUtil {
     public static int getDummyPacketId(){
         return Integer.parseInt(getPropertyNamed("dummy.packet.id"));
     }
+
     public static int getCancelPacketId(){
         return Integer.parseInt(getPropertyNamed("cancel.packet.id"));
     }

@@ -43,7 +43,7 @@ public class ByteUtil {
         for(var b : bytes){
             System.out.print(byteToBinaryString(b) + " ");
         }
-        System.out.println("NEXT PACKET");
+        System.out.println("\nNEXT PACKET");
     }
     public static byte[] concatenateByteArrays(byte[] array1,
                                              byte[] array2){

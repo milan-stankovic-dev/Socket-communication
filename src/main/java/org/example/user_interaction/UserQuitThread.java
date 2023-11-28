@@ -1,20 +1,18 @@
 package org.example.user_interaction;
 
 import lombok.Getter;
-import org.example.config.LoggerConfig;
 
 import java.io.IOException;
 import java.util.logging.Logger;
 
 public class UserQuitThread extends Thread{
     @Getter
-    private volatile boolean shouldQuit = false;
+    private volatile boolean toQuit = false;
     private final Logger logger = Logger.getLogger(UserQuitThread.currentThread().getName());
+
     public UserQuitThread(){
         setDaemon(true);
-        start();
     }
-
     @Override
     public void run() {
       logger.info("""
@@ -22,13 +20,13 @@ public class UserQuitThread extends Thread{
                ENTER IN THE Q KEY TO QUIT THE APP
               ************************************
               """);
-      while(!this.shouldQuit) {
+      while(!this.toQuit) {
           try {
               int result = System.in.read();
               if (result == 'Q' ||
                       result == 'q') {
                   logger.info("Quitting...");
-                  this.shouldQuit = true;
+                  this.toQuit = true;
               }
           } catch (IOException e) {
               logger.severe("User input not instantiated " +
