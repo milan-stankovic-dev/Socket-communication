@@ -1,11 +1,9 @@
 package org.example.communication;
 
 import lombok.Getter;
-import org.example.config.LoggerConfig;
+import org.example.packet.Packet;
 import org.example.util.PacketUtil;
-import org.example.util.PropertyFileUtil;
 import org.example.util.TextFileUtil;
-import org.w3c.dom.Text;
 
 import java.io.*;
 import java.util.logging.Logger;
@@ -14,9 +12,9 @@ public class PacketWriter extends Thread {
     private final DataOutputStream outputStream;
     private static final Logger logger = Logger.getLogger(PacketWriter.currentThread().getName());
     @Getter
-    private final byte[] packetToDeliver;
+    private final Packet packetToDeliver;
 
-    public PacketWriter(DataOutputStream outputStream,byte[] packetToDeliver) {
+    public PacketWriter(DataOutputStream outputStream, Packet packetToDeliver) {
             this.outputStream = outputStream;
             this.packetToDeliver = packetToDeliver;
             setDaemon(true);
@@ -25,16 +23,16 @@ public class PacketWriter extends Thread {
     @Override
     public void run() {
         try {
-            final int delaySeconds = PacketUtil.getPacketDelayInSec(this.packetToDeliver);
+            final int delaySeconds = PacketUtil.getPacketDelayInSec(this.packetToDeliver.getBytes());
             logger.info("Delay is :" + delaySeconds + " seconds.");
             sleep(delaySeconds * 1000L) ;
-            this.outputStream.write(this.packetToDeliver);
+            this.outputStream.write(this.packetToDeliver.getBytes());
             logger.info("Packet with id: " +
-                    PacketUtil.getPacketIdAsInt(this.packetToDeliver) + " delivered to " +
+                    PacketUtil.getPacketIdAsInt(this.packetToDeliver.getBytes()) + " delivered to " +
                     "the server.");
         } catch (IOException e) {
             logger.warning("Could not deliver " +
-                    PacketUtil.getPacketIdAsInt(this.packetToDeliver) + " to server.");
+                    PacketUtil.getPacketIdAsInt(this.packetToDeliver.getBytes()) + " to server.");
         } catch (InterruptedException e) {
             logger.info("Stopped execution of packet sending. Saving to file...");
 

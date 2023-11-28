@@ -1,72 +1,69 @@
 package org.example.util;
 
-import org.example.config.LoggerConfig;
 import org.example.metadata.PacketMetadata;
+import org.example.packet.Packet;
 
 import java.io.*;
+import java.sql.Timestamp;
 import java.util.*;
 import java.util.logging.Logger;
 
 public class TextFileUtil {
     private static final Logger logger = Logger.getLogger(TextFileUtil.class.getName());
-    public static void saveListOfPacketsToFile(List<byte[]> packets, String filePath, boolean append) {
-        try (FileOutputStream fileOut = new FileOutputStream(filePath, append)) {
-            for (byte[] packet : packets) {
-                fileOut.write(packet);
-                fileOut.write(0);
+
+    public static void saveListOfPacketsToFile(List<Packet> packets, String filePath, boolean append) {
+        try (DataOutputStream dataOut = new DataOutputStream(new FileOutputStream(filePath, append))) {
+            for (final Packet packet : packets) {
+                dataOut.write(packet.getBytes());
+                dataOut.writeLong(packet.getReceivedAt().getTime());
             }
         } catch (IOException ex) {
             logger.severe("Could not open file for saving packets.");
         }
     }
+    public static List<Packet> readListOfPacketsFromFile(String filePath) {
+        final List<Packet> packetsFromFile = new ArrayList<>();
+        try (DataInputStream dataIn = new DataInputStream(new FileInputStream(filePath))) {
+            while (true) {
+                try {
+                    final byte[] packetBytes = new byte[PacketMetadata.DUMMY_PACKET_SIZE_BYTES];
+                    dataIn.readFully(packetBytes);
 
+                    final long timestampMillis = dataIn.readLong();
+                    final Timestamp timestamp = new Timestamp(timestampMillis);
 
-    public static List<byte[]> readListOfPacketsFromFile(String filePath) {
-        final List<byte[]> bytesFromFile = new ArrayList<>();
-        try (BufferedInputStream fileIn = new BufferedInputStream(new FileInputStream(filePath))) {
-            byte[] packetData;
-            while ((packetData = readSinglePacketFromStream(fileIn)) != null) {
-                bytesFromFile.add(packetData);
+                    final Packet packet = new Packet(packetBytes, timestamp);
+                    packetsFromFile.add(packet);
+                } catch (EOFException eof) {
+                    break;
+                }
             }
         } catch (IOException ex) {
             logger.severe("Could not open file to read packets.");
+            ex.printStackTrace();
         }
-        return bytesFromFile;
-    }
-
-    private static byte[] readSinglePacketFromStream(InputStream inputStream) throws IOException {
-        ByteArrayOutputStream packetBuffer = new ByteArrayOutputStream();
-        byte[] buffer = new byte[PacketMetadata.DUMMY_PACKET_SIZE_BYTES]; //Since only dummy packets are saved
-        // (They have a fixed delay unlike Cancel packets).
-
-        int bytesRead = inputStream.read(buffer);
-        if (bytesRead != PacketMetadata.DUMMY_PACKET_SIZE_BYTES) {
-            return null; // End of file or incomplete packet
-        }
-        packetBuffer.write(buffer);
-
-        // Skip one byte
-        int skippedByte = inputStream.read();
-        if (skippedByte == -1) {
-            return null; // End of file
-        }
-
-        return packetBuffer.toByteArray();
+        return packetsFromFile;
     }
 
 
-    public static synchronized void saveOnePacketToFile(byte[] packet,
-                                            String filePath, boolean append)  {
-            if(packet == null ||
-                    packet.length != PacketMetadata.DUMMY_PACKET_SIZE_BYTES){
-                logger.warning("Packet is corrupted. Won't save");
-                return;
-            }
 
-            final List<byte[]> wrapperList = new ArrayList<>();
-            wrapperList.add(packet);
+    public static synchronized void saveOnePacketToFile(Packet packet, String filePath, boolean append) {
+        if (packet == null) {
+            logger.warning("Packet is null. Won't save.");
+            return;
+        }
 
-            saveListOfPacketsToFile(wrapperList, filePath, append);
+        if (packet.getBytes().length != PacketMetadata.DUMMY_PACKET_SIZE_BYTES){
+            logger.warning("Packet is corrupted. Won't save. Packet: " +
+                    Arrays.toString(packet.getBytes()));
+            logger.warning("PACKET LEN IS " + packet.getBytes().length);
+            return;
+        }
+
+        final List<Packet> wrapperList = new ArrayList<>();
+        wrapperList.add(packet);
+
+        saveListOfPacketsToFile(wrapperList, filePath, append);
     }
 
 }

@@ -3,10 +3,12 @@ package org.example.communication;
 import lombok.Getter;
 import org.example.config.LoggerConfig;
 import org.example.metadata.PacketMetadata;
+import org.example.packet.Packet;
 import org.example.util.ByteUtil;
 
 import java.io.*;
 import java.net.Socket;
+import java.sql.Timestamp;
 import java.util.logging.Logger;
 
 public class PacketReader {
@@ -39,7 +41,7 @@ public class PacketReader {
         return ByteUtil.byteBlockAsIntLE(idBytes);
     }
 
-    public byte[] readPacketFully() throws IOException {
+    public Packet readPacketFully() throws IOException {
         final int packetId = readPacketId();
         final int dataLength = (packetId == PacketMetadata.DUMMY_PACKET_ID) ?
                 (PacketMetadata.DUMMY_PACKET_SIZE_BYTES - PacketMetadata.DATA_SEGMENT_BYTES):
@@ -67,10 +69,14 @@ public class PacketReader {
             logger.info("PACKET TYPE: Cancel");
         }
 
-        return ByteUtil.concatenateByteArrays(
+        final Timestamp receivedAt = new Timestamp(
+                System.currentTimeMillis()
+        );
+        final byte[] fixedPacket = ByteUtil.concatenateByteArrays(
                 ByteUtil.intAsByteBlockLE(packetId),
                 packetBytes
         );
+        return new Packet(fixedPacket, receivedAt);
 
     }
 

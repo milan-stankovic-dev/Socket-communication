@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 public class Main {
     private static final Logger logger = LoggerConfig.configureLogger(Main.class.getName());
 
+
     public static void main(String[] args) {
         try {
             final var handler = CommunicationLogicHandler.getInstance();
@@ -19,6 +20,7 @@ public class Main {
 
             socket.close();
             logger.info("Socket closed. Main finished executing.");
+
 
         } catch (IOException e) {
             logger.severe("IOException in main: " +
