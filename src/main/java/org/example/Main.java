@@ -8,10 +8,20 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.logging.Logger;
+
+/**
+ * Main class for the project
+ */
 public class Main {
+    /**
+     * logger instance and configuration
+     */
     private static final Logger logger = LoggerConfig.configureLogger(Main.class.getName());
 
-
+    /**
+     * main method for the project.
+     * @param args optional command line argument
+     */
     public static void main(String[] args) {
         try {
             final var handler = CommunicationLogicHandler.getInstance();

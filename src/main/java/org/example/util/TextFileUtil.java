@@ -9,9 +9,21 @@ import java.util.logging.Logger;
 
 import static org.example.metadata.PacketMetadata.DUMMY_PACKET_SIZE_BYTES;
 
+/**
+ * Util class for working with text files
+ */
 public class TextFileUtil {
+    /**
+     * logger instance
+     */
     private static final Logger logger = Logger.getLogger(TextFileUtil.class.getName());
 
+    /**
+     * Saves a list of packets to specified file path. Can be a fresh save or an append.
+     * @param packets list of packets to be saved
+     * @param filePath path to file designated for saving
+     * @param append if purpose is to append should be true, false otherwise
+     */
     public static void saveListOfPacketsToFile(List<Packet> packets, String filePath, boolean append) {
         try (DataOutputStream dataOut = new DataOutputStream(new FileOutputStream(filePath, append))) {
             for (final Packet packet : packets) {
@@ -22,6 +34,12 @@ public class TextFileUtil {
             logger.severe("Could not open file for saving packets.");
         }
     }
+
+    /**
+     * Retrieves a list of packets from file at specified path.
+     * @param filePath path to file from which list is to be retrieved
+     * @return list of retrieved packets
+     */
     public static List<Packet> readListOfPacketsFromFile(String filePath) {
         final List<Packet> packetsFromFile = new ArrayList<>();
         try (DataInputStream dataIn = new DataInputStream(new FileInputStream(filePath))) {
@@ -46,6 +64,12 @@ public class TextFileUtil {
         return packetsFromFile;
     }
 
+    /**
+     * Saves one packet to file specified with filePath (method is synchronized).
+     * @param packet packet to be saved
+     * @param filePath path to file designated for saving
+     * @param append if purpose is to append should be true, false otherwise
+     */
     public static synchronized void saveOnePacketToFile(Packet packet, String filePath, boolean append) {
         if (packet == null) {
             logger.warning("Packet is null. Won't save.");

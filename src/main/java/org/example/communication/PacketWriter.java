@@ -1,24 +1,38 @@
 package org.example.communication;
 
 import lombok.Getter;
-import org.example.metadata.PacketMetadata;
 import org.example.packet.Packet;
-import org.example.util.PacketUtil;
-import org.example.util.TextFileUtil;
 
 import java.io.*;
 import java.util.logging.Logger;
 
-import static org.example.metadata.PacketMetadata.CANCEL_PACKET_ID;
 import static org.example.metadata.PacketMetadata.CANCEL_PACKET_SIZE_BYTES;
 import static org.example.util.PacketUtil.*;
 import static org.example.util.TextFileUtil.saveOnePacketToFile;
 
+/**
+ * Sends packets to server. Is a thread class.
+ */
 public class PacketWriter extends Thread {
+    /**
+     * socket communication output stream
+     */
     private final DataOutputStream outputStream;
+    /**
+     * logger instance
+     */
     private static final Logger logger = Logger.getLogger(PacketWriter.currentThread().getName());
+    /**
+     * packet that is to be processed (contains getter)
+     */
     @Getter
     private final Packet packetToDeliver;
+
+    /**
+     * Public constructor. Sets deamon to true to prevent lingering threads.
+     * @param outputStream socket communication output stream
+     * @param packetToDeliver packet that is to be processed
+     */
 
     public PacketWriter(DataOutputStream outputStream, Packet packetToDeliver) {
             this.outputStream = outputStream;
@@ -26,6 +40,9 @@ public class PacketWriter extends Thread {
             setDaemon(true);
     }
 
+    /**
+     * Run method for thread. Handles packet logic and logs data to console.
+     */
     @Override
     public void run() {
         try {
@@ -58,6 +75,16 @@ public class PacketWriter extends Thread {
         }
     }
 
+    /**
+     * Sends packet to server after the proper delay if packet not stale, immediately otherwise.
+     * Logs sent packet
+     * NOTE: Sending of stale packets toggleable via commenting and uncommenting return inside
+     * staleness check.
+     * @param packet packet to be sent to server
+     * @param delaySeconds waiting period for packet resending
+     * @throws IOException if outputStream cannot send packet
+     * @throws InterruptedException if interrupt occurs
+     */
     private void handlePacketSending(Packet packet, int delaySeconds) throws IOException,
             InterruptedException {
 
